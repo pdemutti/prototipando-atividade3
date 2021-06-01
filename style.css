@@ -42,6 +42,15 @@ body {
     padding: 1rem 0;
     justify-content: space-evenly;
 }
+/* TABLET */
+.hero__login {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start
+}
+.hero__pesquisar input{
+    width: 100%;
+}
 h1{
     font-size: 2rem;
     color: white;
@@ -73,6 +82,7 @@ h1{
 }
 .form{
     padding: 1rem 0;
+    justify-content: center;
 }
 .titulo{
     color: var(--color-primary);
@@ -82,6 +92,7 @@ h1{
 .filter__wrapper {
     display:flex;
     flex-direction: row;
+    justify-content: center;
 }
 .slide{
     display: flex;
@@ -90,6 +101,10 @@ h1{
 /* footer */
 footer{
     background-color: #ddd;
+    margin-top: 2rem;
+}
+.rodape__redessociais{
+    padding-top: 1rem;
 }
 .rodape__redessociais ul{
     list-style: none;
@@ -109,6 +124,8 @@ footer{
 }
 .rodape__direitos p{
     font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -120,6 +137,9 @@ footer{
     width: 3rem;
 }
 
+.filter__inputs{
+    width: 100%;
+}
 .filter__inputs input, .filter__inputs select{
     border: 1px solid var(--color-secondary);
     background-color: rgba(0, 79, 50, 0.19);
