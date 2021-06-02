@@ -1,31 +1,42 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
 
+.unstyled {
+    -webkit-appearance: none;
+}
+.unstyled::-webkit-inner-spin-button,
+.unstyled::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
 :root {
     --color-primary: #055240;
     --color-secondary: #109C68;
     --color-white: #fff;
+    --color-gray: #ddd;
     font-size: 16px;
     font-family: 'Roboto';
-}
-
-body {
-    padding: 0 15px;
 }
 
 .flex {
     display: flex;
 }
 
+.content {
+    padding: 0 1rem;
+}
+
 .header{
     display: flex;
-    justify-content: space-between;
-    margin-top: 1rem;
+    margin: 1rem 1rem;
 }
+
 .header__acessibilidade__lista{
     list-style: none;
     display: flex;
     align-items: center;
+    margin: 0;
 }
 .header__acessibilidade__lista li{
     margin-left: 0.2rem;
@@ -33,32 +44,45 @@ body {
 .header__acessibilidade__lista a{
     color: var(--color-primary);
 }
-.header__acessibilidade__lista button{
+.header__acessibilidade__lista li button{
+    padding: 0;
     border-radius: 50%;
-    height: 26px;
+    display: block;
+    height: 20px;
+    width: 20px !important;
 }
+
+.header__acessibilidade__lista li:nth-child(5), li:nth-child(7) {
+    margin-left: 20px;
+}
+
 .hero{
-    background-color: #055240;
+    background-color: var(--color-primary);
     padding: 1rem 0;
-    justify-content: space-evenly;
 }
+
 h1{
     font-size: 2rem;
     color: white;
     display: flex;
     justify-content: center;
 }
-.hero img{
-    width: 30px;
-}
+
 .hero__logo{
     display: flex;
     justify-content: center;
 }
+
+.icon__search-input {
+    top: 35px;
+    right: 24px;
+}
+
 .covid{
     display: flex;
     background-color: #ECF1CC;
     justify-content: space-between;
+    padding: 0.5rem 1rem;
 }
 .covid p{
     font-size: 0.8rem;
@@ -87,10 +111,14 @@ h1{
     display: flex;
     justify-content: center;
 }
+
 /* footer */
-footer{
-    background-color: #ddd;
+.rodape {
+    background-color: var(--color-gray);
+    margin-top: 1rem;
+    padding: 1rem 0;
 }
+
 .rodape__redessociais ul{
     list-style: none;
     display: flex;
@@ -109,8 +137,8 @@ footer{
 }
 .rodape__direitos p{
     font-size: 0.8rem;
+    text-align: center;
 }
-
 
 .filter__button button{
     border: none;
@@ -136,4 +164,10 @@ footer{
 
 .filter__inputs_person {
     background: url("assets/person.svg") no-repeat scroll 5px 3px;
+    background-size: 20px;
 }
+
+.swiper-container {
+    width: calc(100vw - 30px);
+    height: 300px;
+  }
