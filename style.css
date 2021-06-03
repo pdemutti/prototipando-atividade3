@@ -251,6 +251,7 @@ h1 {
     max-width: 500px;
     border-radius: 20px;
     width: 100%;
+    background-color: #f3f3f3;
 }
 
 .card__rating {
