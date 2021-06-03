@@ -264,7 +264,12 @@ h1 {
     border-radius: 20px 0 0 20px;
     margin: 0;
 }
-
+.card__image1{
+    background-image: url(./assets/blue.png);
+}
+.card__image2{
+    background-image: url(./assets/confort.png);
+}
 .card__rating__star img {
     width: 20px;
 }
