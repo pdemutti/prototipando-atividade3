@@ -359,3 +359,18 @@ h1 {
     }
     
 }
+.categoria p{
+    font-size: 1.2rem;
+}
+.estrelas{
+    color: grey
+}
+.fa-star:hover{
+    color: black;
+    transition: all 0.2s;
+}
+
+.icones{
+    font-size: 3rem;
+    letter-spacing: 1vw;
+}

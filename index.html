@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <title>Hospedagem - Gulliver Traaveler</title>
 </head>
@@ -140,427 +141,69 @@
           <img class="img-fluid banner" src="assets/banner-motel.png" alt="Banner publicitário" aria>
         </div>
         <div class="col-sm-12 d-flex justify-content-start  justify-content-lg-center col-lg-3 categoria">
-          <h2 class="border-bottom border-success">Hospedagem</h2>
+          <h2 class="border-bottom border-success">Avaliar Local</h2>
         </div>
       </div>
 
+    <!-- AVALIAÇÃO -->
+
+    <h3 class=" titulo">Eu estou avaliando...</h3>   
 
 
+    <div class="container">
 
+      <div class="row d-flex flex-row">
 
+        <div class="col-5 col-lg-3 w-100 h-100 ">
+          <img class="img-fluid banner rounded" src="assets/IBIS.png" alt="faixada do hotel ibis" aria>
+        </div>
 
-      <div class="row">
-        <div class="col-sm-12">
-          <p class="texto">Encontre ofertas em hotéis, casas, apartamentos e muito mais...</p>
-          <span>De hotéis-fazenda aconchegantes a apartamentos modernos na cidade</span>
+        <div class=" col-5 col-lg-9 d-flex flex-column justify-content-start align-items-start categoria">
+          <h2 class="border-bottom border-success">Ibis Style Anhembi</h2>
+          <p>Localizado em São Paulo - SP</p>
+          <p class="icones">
+            <i class="fas fa-camera"></i>
+            <i class="far fa-images"></i>
+            <i class="far fa-building"></i>
+            <i class="fas fa-subway"></i>
+          </p>
+
+          <!-- <label for="avaliacao">Conte-nos como foi sua experiência:</label>
+          <textarea id="avaliacao" name="avaliacao" rows="5" cols="33" placeholder="Lembre-se que isso ajudará muitos viajantes!">
+        
+          </textarea> -->
         </div>
       </div>
 
-      <div class="row form">
-        <div class="col-sm-12">
+      <div class="row flex-column mt-5">
 
-          <div class="filter__wrapper">
-            <div class="filter__inputs">
-              <div><input class="w-100 filter__inputs_where " type="text" placeholder="Para onde voce vai?"></div>
-              <div class="flex">
-                <input class="w-50 filter__inputs_calendar unstyled" type="datetime-local">
-                <select name="" id="" class="w-50 filter__inputs_person form-select" aria-label="Quantidade de adultos">
-                  <option value="1" selected>1 adulto</option>
-                  <option value="2"> 2 adultos </option>
-                  <option value="3"> 3 adultos </option>
-                  <option value="4"> 4 adultos </option>
-                  <option value="5"> 5 adultos </option>
-                  <option value="6"> 6 adultos </option>
-                </select>
-
-              </div>
-            </div>
-            <div class="filter__button">
-              <button>
-                <img src="assets/search.svg" />
-              </button>
-            </div>
-          </div>
-
-
+        <h5>Legal! E o que você tem a nos contar sobre Ibis Style Anhembi?</h5>
+        <p>Em geral, como você avalia sua experiência?</p>
+        <p class="icones estrelas"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+      </div>
+      <div class="row d-flex">
+        <h5 class="col-12 p-0">Como conheceu este local?</h5>
+        <div class="col-9 d-flex p-0 ">
+          <button type="button" class="col-4 btn btn-secondary mx-2 flex-row">
+            <i class="fas fa-home"></i>
+            <p>Resido na Região</p>
+          </button>
+          <button type="button" class="col-4 btn btn-secondary mx-2 flex-row">
+            <i class="fas fa-camera"></i>
+            <p>Sou turísta</p>
+          </button>
+          <button type="button" class="col-4 btn btn-secondary mx-2 flex-row">
+            <i class="fas fa-id-card-alt"></i>
+            <p>Sou Guia Turístico</p>
+          </button>
         </div>
       </div>
 
-      <!-- CHECKBOX -->
-
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="tipo-viagem">
-            <div class="tipo-viagem__trabalho form-check">
-              <input class="form-check-input" type="checkbox" id="trabalho" name="trabalho" value="">
-              <label class="form-check-label" for="trabalho">Vou viajar a trabalho</label>
-            </div>
-            <div class="tipo-viagem__negocios form-check">
-              <input class="form-check-input" type="checkbox" id="negocios" name="negocios" value="">
-              <label class="form-check-label" for="negocios">Vou viajar a negócios</label>
-            </div>
-            <div class="tipo-viagem__turixso form-check">
-              <input class="form-check-input" type="checkbox" id="turixso" name="turixso" value="">
-              <label class="form-check-label" for="turixso">Vou viajar a turixso</label>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- HOTEIS -->
-      <h3 class=" titulo">Hotéis</h3>
-    
-      <!-- If we need pagination -->
-      
-
-      <!-- Slider main container -->
-      <div class="swiper-container">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper" >
-          <!-- Slides -->
-          <div class="swiper-slide">
-            <div class="container-card">
-              <div class="card">
-                <figure class="col-5 card__image">
-                  <!-- <img src="./assets/IBIS.png" alt="" class="w-100 img-fluid"> -->
-                </figure>
-                <div class="col-7 pt-4">
-                  <h5>Ibis Style Anhembi</h5>
-                  <p class="m-0">Oeste- Morumbi</p>
-                  <ul class="card__rating p-0 m-0">
-                    <li class="card__rating__star"><img src="./assets/Glyph_.svg" alt=""></li>
-                    <li class="card__rating__star"><img src="./assets/Glyph_.svg" alt=""></li>
-                    <li class="card__rating__star"><img src="./assets/Glyph_.svg" alt=""></li>
-                  </ul>
-                  <div class="row">
-                    <div class="card__preco col-6">
-                      <p class="p-0 m-0">A partir de</p>
-                      <span class="font-weight-bold">R$400,00</span>
-                    </div>
-                    <div class="card__botoes col-6">
-                      <button type="button" class="btn btn-link" class="">Mais Detalhes</button>
-                      <button type="button" class="btn btn-link font-weight-bold" class="">Reservar</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="swiper-slide">
-            <div class="container-card">
-              <div class="card row">
-                <figure class="col-5 card__image1 card__image">
-                  <!-- <img src="./assets/IBIS.png" alt="" class="w-100 img-fluid"> -->
-                </figure>
-                <div class="col-7 pt-4">
-                  <h5>Ibis Style Anhembi</h5>
-                  <p class="m-0">Oeste- Morumbi</p>
-                  <ul class="card__rating p-0 m-0">
-                    <li class="card__rating__star"><img src="./assets/Glyph_.svg" alt=""></li>
-                    <li class="card__rating__star"><img src="./assets/Glyph_.svg" alt=""></li>
-                    <li class="card__rating__star"><img src="./assets/Glyph_.svg" alt=""></li>
-                  </ul>
-                  <div class="row">
-                    <div class="card__preco col-6">
-                      <p class="p-0 m-0">A partir de</p>
-                      <span class="font-weight-bold">R$400,00</span>
-                    </div>
-                    <div class="card__botoes col-6">
-                      <button type="button" class="btn btn-link" class="">Mais Detalhes</button>
-                      <button type="button" class="btn btn-link font-weight-bold" class="">Reservar</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="swiper-slide">
-            <div class="container-card">
-              <div class="card row">
-                <figure class="col-5 card__image card__image2">
-                  <!-- <img src="./assets/IBIS.png" alt="" class="w-100 img-fluid"> -->
-                </figure>
-                <div class="col-7 pt-4">
-                  <h5>Ibis Style Anhembi</h5>
-                  <p class="m-0">Oeste- Morumbi</p>
-                  <ul class="card__rating p-0 m-0">
-                    <li class="card__rating__star"><img src="./assets/Glyph_.svg" alt=""></li>
-                    <li class="card__rating__star"><img src="./assets/Glyph_.svg" alt=""></li>
-                    <li class="card__rating__star"><img src="./assets/Glyph_.svg" alt=""></li>
-                  </ul>
-                  <div class="row">
-                    <div class="card__preco col-6">
-                      <p class="p-0 m-0">A partir de</p>
-                      <span class="font-weight-bold">R$400,00</span>
-                    </div>
-                    <div class="card__botoes col-6">
-                      <button type="button" class="btn btn-link" class="">Mais Detalhes</button>
-                      <button type="button" class="btn btn-link font-weight-bold" class="">Reservar</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="container-card">
-              <div class="card row">
-                <figure class="col-5 card__image">
-                  <!-- <img src="./assets/IBIS.png" alt="" class="w-100 img-fluid"> -->
-                </figure>
-                <div class="col-7 pt-4">
-                  <h5>Ibis Style Anhembi</h5>
-                  <p class="m-0">Oeste- Morumbi</p>
-                  <ul class="card__rating p-0 m-0">
-                    <li class="card__rating__star"><img src="./assets/Glyph_.svg" alt=""></li>
-                    <li class="card__rating__star"><img src="./assets/Glyph_.svg" alt=""></li>
-                    <li class="card__rating__star"><img src="./assets/Glyph_.svg" alt=""></li>
-                  </ul>
-                  <div class="row">
-                    <div class="card__preco col-6">
-                      <p class="p-0 m-0">A partir de</p>
-                      <span class="font-weight-bold">R$400,00</span>
-                    </div>
-                    <div class="card__botoes col-6">
-                      <button type="button" class="btn btn-link" class="">Mais Detalhes</button>
-                      <button type="button" class="btn btn-link font-weight-bold" class="">Reservar</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="swiper-slide">
-            <div class="container-card">
-              <div class="card row">
-                <figure class="col-5 card__image2 card__image">
-                  <!-- <img src="./assets/IBIS.png" alt="" class="w-100 img-fluid"> -->
-                </figure>
-                <div class="col-7 pt-4">
-                  <h5>Ibis Style Anhembi</h5>
-                  <p class="m-0">Oeste- Morumbi</p>
-                  <ul class="card__rating p-0 m-0">
-                    <li class="card__rating__star"><img src="./assets/Glyph_.svg" alt=""></li>
-                    <li class="card__rating__star"><img src="./assets/Glyph_.svg" alt=""></li>
-                    <li class="card__rating__star"><img src="./assets/Glyph_.svg" alt=""></li>
-                  </ul>
-                  <div class="row">
-                    <div class="card__preco col-6">
-                      <p class="p-0 m-0">A partir de</p>
-                      <span class="font-weight-bold">R$400,00</span>
-                    </div>
-                    <div class="card__botoes col-6">
-                      <button type="button" class="btn btn-link" class="">Mais Detalhes</button>
-                      <button type="button" class="btn btn-link font-weight-bold" class="">Reservar</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-
-
-
-
-        </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-
-      </div>
-
-
-            <!-- POUSADA -->
-            <h3 class=" titulo">Pousada</h3>
-    
-            <!-- If we need pagination -->
-            
-      
-            <!-- Slider main container -->
-            <div class="swiper-container">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper" >
-                <!-- Slides -->
-                <div class="swiper-slide">
-                  <div class="container-card">
-                    <div class="card">
-                      <figure class="col-5 card__image1 card__image">
-                        <!-- <img src="./assets/IBIS.png" alt="" class="w-100 img-fluid"> -->
-                      </figure>
-                      <div class="col-7 pt-4">
-                        <h5>Ibis Style Anhembi</h5>
-                        <p class="m-0">Oeste- Morumbi</p>
-                        <ul class="card__rating p-0 m-0">
-                          <li class="card__rating__star"><img src="./assets/Glyph_.svg" alt=""></li>
-                          <li class="card__rating__star"><img src="./assets/Glyph_.svg" alt=""></li>
-                          <li class="card__rating__star"><img src="./assets/Glyph_.svg" alt=""></li>
-                        </ul>
-                        <div class="row">
-                          <div class="card__preco col-6">
-                            <p class="p-0 m-0">A partir de</p>
-                            <span class="font-weight-bold">R$400,00</span>
-                          </div>
-                          <div class="card__botoes col-6">
-                            <button type="button" class="btn btn-link" class="">Mais Detalhes</button>
-                            <button type="button" class="btn btn-link font-weight-bold" class="">Reservar</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-      
-      
-                <div class="swiper-slide">
-                  <div class="container-card">
-                    <div class="card row">
-                      <figure class="col-5 card__image">
-                        <!-- <img src="./assets/IBIS.png" alt="" class="w-100 img-fluid"> -->
-                      </figure>
-                      <div class="col-7 pt-4">
-                        <h5>Ibis Style Anhembi</h5>
-                        <p class="m-0">Oeste- Morumbi</p>
-                        <ul class="card__rating p-0 m-0">
-                          <li class="card__rating__star"><img src="./assets/Glyph_.svg" alt=""></li>
-                          <li class="card__rating__star"><img src="./assets/Glyph_.svg" alt=""></li>
-                          <li class="card__rating__star"><img src="./assets/Glyph_.svg" alt=""></li>
-                        </ul>
-                        <div class="row">
-                          <div class="card__preco col-6">
-                            <p class="p-0 m-0">A partir de</p>
-                            <span class="font-weight-bold">R$400,00</span>
-                          </div>
-                          <div class="card__botoes col-6">
-                            <button type="button" class="btn btn-link" class="">Mais Detalhes</button>
-                            <button type="button" class="btn btn-link font-weight-bold" class="">Reservar</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-      
-      
-                <div class="swiper-slide">
-                  <div class="container-card">
-                    <div class="card row">
-                      <figure class="col-5 card__image">
-                        <!-- <img src="./assets/IBIS.png" alt="" class="w-100 img-fluid"> -->
-                      </figure>
-                      <div class="col-7 pt-4">
-                        <h5>Ibis Style Anhembi</h5>
-                        <p class="m-0">Oeste- Morumbi</p>
-                        <ul class="card__rating p-0 m-0">
-                          <li class="card__rating__star"><img src="./assets/Glyph_.svg" alt=""></li>
-                          <li class="card__rating__star"><img src="./assets/Glyph_.svg" alt=""></li>
-                          <li class="card__rating__star"><img src="./assets/Glyph_.svg" alt=""></li>
-                        </ul>
-                        <div class="row">
-                          <div class="card__preco col-6">
-                            <p class="p-0 m-0">A partir de</p>
-                            <span class="font-weight-bold">R$400,00</span>
-                          </div>
-                          <div class="card__botoes col-6">
-                            <button type="button" class="btn btn-link" class="">Mais Detalhes</button>
-                            <button type="button" class="btn btn-link font-weight-bold" class="">Reservar</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-      
-                <div class="swiper-slide">
-                  <div class="container-card">
-                    <div class="card row">
-                      <figure class="col-5 card__image1 card__image">
-                        <!-- <img src="./assets/IBIS.png" alt="" class="w-100 img-fluid"> -->
-                      </figure>
-                      <div class="col-7 pt-4">
-                        <h5>Ibis Style Anhembi</h5>
-                        <p class="m-0">Oeste- Morumbi</p>
-                        <ul class="card__rating p-0 m-0">
-                          <li class="card__rating__star"><img src="./assets/Glyph_.svg" alt=""></li>
-                          <li class="card__rating__star"><img src="./assets/Glyph_.svg" alt=""></li>
-                          <li class="card__rating__star"><img src="./assets/Glyph_.svg" alt=""></li>
-                        </ul>
-                        <div class="row">
-                          <div class="card__preco col-6">
-                            <p class="p-0 m-0">A partir de</p>
-                            <span class="font-weight-bold">R$400,00</span>
-                          </div>
-                          <div class="card__botoes col-6">
-                            <button type="button" class="btn btn-link" class="">Mais Detalhes</button>
-                            <button type="button" class="btn btn-link font-weight-bold" class="">Reservar</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-      
-      
-                <div class="swiper-slide">
-                  <div class="container-card">
-                    <div class="card row">
-                      <figure class="col-5 card__image2 card__image">
-                        <!-- <img src="./assets/IBIS.png" alt="" class="w-100 img-fluid"> -->
-                      </figure>
-                      <div class="col-7 pt-4">
-                        <h5>Ibis Style Anhembi</h5>
-                        <p class="m-0">Oeste- Morumbi</p>
-                        <ul class="card__rating p-0 m-0">
-                          <li class="card__rating__star"><img src="./assets/Glyph_.svg" alt=""></li>
-                          <li class="card__rating__star"><img src="./assets/Glyph_.svg" alt=""></li>
-                          <li class="card__rating__star"><img src="./assets/Glyph_.svg" alt=""></li>
-                        </ul>
-                        <div class="row">
-                          <div class="card__preco col-6">
-                            <p class="p-0 m-0">A partir de</p>
-                            <span class="font-weight-bold">R$400,00</span>
-                          </div>
-                          <div class="card__botoes col-6">
-                            <button type="button" class="btn btn-link" class="">Mais Detalhes</button>
-                            <button type="button" class="btn btn-link font-weight-bold" class="">Reservar</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-      
-      
-      
-      
-      
-      
-      
-              </div>
-              <!-- If we need pagination -->
-              <div class="swiper-pagination"></div>
-      
-              <!-- If we need navigation buttons -->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-      
-            </div>
 
     </div>
-    </div>
-    <!-- Pousadas -->
+
+
+      
 
   </main>
 
@@ -603,6 +246,7 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxsfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
   </script> -->
   <script src="script.js"></script>
+  
 </body>
 
 </html>
